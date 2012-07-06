@@ -1,0 +1,24 @@
+{
+  "name": "response-codes",
+  "version": "0.0.1",
+  "description": "Extends http.ServerResponse to include status code functions.",
+  "keywords": [
+    "http", "ServerResponse", "server", "response", "status", "codes", "extend"
+  ],            
+  "author": {
+    "name": "Brett Langdon",
+    "email": "brett@blangdon.com"
+  },
+  "contributors": [
+  ],
+  "engines": {
+    "node": ">= 0.1.90"
+  },
+  "dependencies": {
+     "http-status":"0.1.1"
+  },
+  "repository":{
+       "type": "git"
+     , "url": "github.com/brettlangdon/node-response-codes.git"
+  } 
+}
