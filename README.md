@@ -1,5 +1,13 @@
 ## Response Codes ##
 
+Node.JS module used to extend the functionality of http.ServerResponse to include functions to easily end a request by status code.
+The module simply adds the following function for all common http status code numbers to the http.ServerResponse prototype.
+```
+function(message, headers){
+  this.writeHead(CODE, headers);
+  this.end(message);
+}
+```
 
 ### Install
 ```
@@ -20,7 +28,7 @@ http.createServer( function(req,res){
     res.UNAUTHORIZED('STAY AWAY!');
     break;
   default:
-    res.NOTFOUND('nothing to see here, move along');
+    res.NOT_FOUND('nothing to see here, move along');
     break;
   }
 }).listen(1337);
